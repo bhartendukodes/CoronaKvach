@@ -1,3 +1,3 @@
 # CoronaKvach
 
-https://user-images.githubusercontent.com/90476710/152195628-8e7d1a18-10bb-4c1b-9080-50db3d3a7575.mp4
+https://user-images.githubusercontent.com/90476710/152204250-d49b8510-ebf9-4690-b037-f18bc916691a.mp4
