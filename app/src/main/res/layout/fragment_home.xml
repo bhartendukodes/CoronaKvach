@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#161625">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationview"
+            android:layout_width="200dp"
+            android:layout_height="220dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-30dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/virus2" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/firstIcon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@id/secondicon"
+            android:layout_marginTop="70dp"
+            android:layout_toStartOf="@id/secondicon"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/virus" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/secondicon"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            app:lottie_rawRes="@raw/virus"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-30dp"
+            />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="21dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Covid Tracker"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/countryLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:paddingTop="4dp"
+                android:text="India"
+                android:textColor="@color/white"
+                android:textSize="39sp"
+                android:textStyle="bold"
+                app:drawableRightCompat="@drawable/ic_drop_down" />
+
+            <TextView
+                android:id="@+id/tvUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:paddingTop="5dp"
+                android:text="Update at Jan 21 2022"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@+id/animationview">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/infoLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#FFEB3B" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:gravity="center_vertical"
+                        android:text="confirm"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#2196F3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:gravity="center_vertical"
+                        android:text="Active"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#4FEF05" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:gravity="center_vertical"
+                        android:text="Recovered"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#F44336" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:gravity="center_vertical"
+                        android:text="Death"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <org.eazegraph.lib.charts.PieChart
+                android:id="@+id/piechart"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/infoLayout"
+                android:padding="8dp"
+                app:egInnerPaddingColor="#161625"
+                app:egLegendHeight="0dp"
+                app:egLegendTextSize="0sp"
+                app:egUsePieRotation="true"
+                app:egValueTextSize="0sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="32dp"
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="120dp"
+                android:layout_width="160dp"
+                android:backgroundTint="#F6CFDC"
+                android:layout_marginStart="20dp"
+                android:padding="14dp"
+                app:cardCornerRadius="20dp"
+                android:paddingStart="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="20sp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#FFEB3B" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Confirm"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginStart="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/cases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Refreshing"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:layout_marginTop="7dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/todayCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(+0)"
+                        android:layout_marginTop="6dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+
+                        />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="120dp"
+                android:layout_width="160dp"
+                android:backgroundTint="#F6CFDC"
+                android:layout_marginStart="20dp"
+                android:padding="14dp"
+                app:cardCornerRadius="20dp"
+                android:paddingStart="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="20sp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#3F51B5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Active"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginStart="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/activeCases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Refreshing"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:layout_marginTop="7dp"
+
+                        />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="120dp"
+                android:layout_width="160dp"
+                android:backgroundTint="#F6CFDC"
+                android:layout_marginStart="20dp"
+                android:padding="14dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp"
+                android:paddingStart="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="20sp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#5EEF4D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Recovered"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginStart="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/totalRecover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Refreshing"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:layout_marginTop="7dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/todayRecover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(+0)"
+                        android:layout_marginTop="9dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+
+                        />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="120dp"
+                android:layout_width="160dp"
+                android:backgroundTint="#F6CFDC"
+                android:layout_marginStart="20dp"
+                android:padding="14dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="20sp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#E91E63" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Death"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginStart="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/deaths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Refreshing"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:layout_marginTop="7dp"
+
+                        />
+                    <TextView
+                        android:id="@+id/todayDeaths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(+0)"
+                        android:layout_marginTop="9dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+
+                        />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="120dp"
+                android:layout_width="160dp"
+                android:backgroundTint="#F6CFDC"
+                android:layout_marginStart="20dp"
+                android:padding="14dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="20dp"
+                android:paddingStart="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="20sp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#CC2DE1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Test"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginStart="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Refreshing"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:layout_marginTop="7dp"
+
+                        />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_height="120dp"
+                android:layout_width="160dp"
+                android:backgroundTint="#F6CFDC"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:padding="14dp"
+                app:cardCornerRadius="20dp"
+                android:paddingStart="12dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_margin="20sp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="#FF5722" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Serious"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginStart="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/tvSeriousCase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Refreshing"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textSize="22sp"
+                        android:layout_marginTop="7dp"
+
+                        />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </GridLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
